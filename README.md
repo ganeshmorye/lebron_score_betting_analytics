@@ -63,13 +63,10 @@ In essence, the project demonstrates a successful application of data science te
 
 ## Next Steps:
 
-- **Model Improvement**:
-  - To improve the models, it may be beneficial to explore additional feature engineering, model tuning, or different modeling techniques that could provide a better balance between training performance and generalization to test data.
+- **Model Improvement**: To improve the models, it may be beneficial to explore additional feature engineering, model tuning, or different modeling techniques that could provide a better balance between training performance and generalization to test data.
   
-- **Feature Reevaluation**:
-  - Considering the feature importance scores and the overfitting observed, it would be prudent to reassess the features used in the model, potentially removing those that contribute to overfitting or that do not have significant predictive power.
+- **Feature Reevaluation**: Considering the feature importance scores and the overfitting observed, it would be prudent to reassess the features used in the model, potentially removing those that contribute to overfitting or that do not have significant predictive power.
 
-- **Incorporating Domain Knowledge**:
-  - The models could potentially be improved by incorporating more domain knowledge about basketball, such as player fatigue, travel schedules, or other contextual factors that may affect performance.
+- **Incorporating Domain Knowledge**: The models could potentially be improved by incorporating more domain knowledge about basketball, such as player fatigue, travel schedules, or other contextual factors that may affect performance.
 
 The RMSE scores provide a benchmark for the current models' performance, setting a foundation for future iterations and improvements to enhance the accuracy and reliability of LeBron James' points predictions.
