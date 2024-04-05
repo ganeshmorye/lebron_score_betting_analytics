@@ -1,18 +1,23 @@
 # LeBron James Points Prediction Model
 
 ## Overview
+
 This project aims to predict the points scored by LeBron James in his first regular season game in the 2023-24 season, specifically the game between the LA Lakers and the Denver Nuggets in Denver on October 24, 2023. The model leverages historical game data and player statistics, with a focus on transforming these into rolling averages to capture recent performance trends more accurately.
 
 ## Business Objective
+
 The goal is to provide a robust predictive model that can inform betting strategies by accurately forecasting player performance, specifically the number of points LeBron James is expected to score.
 
 ## Data Collection
+
 Data was collected using Sportradar's API, which provides detailed NBA game statistics. The data collection process involved retrieving LeBron's seasonal statistics and game-by-game data for the last 10 seasons, with special attention given to his tenure with the LA Lakers to ensure relevance and consistency in the predictive model.
 
 ## Data Transformation
+
 The raw data was transformed into rolling averages to smooth out the performance fluctuations and emphasize recent trends, which are more indicative of future performance. This transformation included creating new features and incorporating additional game context such as game location, date, and team dynamics.
 
 ## Modeling
+
 Several machine learning models were trained and evaluated, with the Random Forest, Support Vector Regressor (SVR), and Gradient Boosting Regressor (GBR) models showing particular promise. The models were assessed using Root Mean Square Error (RMSE) as the evaluation metric to ensure a fair and robust performance measure.
 
 ## Model Performance Analysis
@@ -20,12 +25,14 @@ Several machine learning models were trained and evaluated, with the Random Fore
 The model performance was evaluated using the Root Mean Square Error (RMSE), which provides a measure of the average magnitude of the predictive errors.
 
 ### Key Performance Metrics:
+
 - **Training RMSE for the SVR Model**: 7.14
 - **Testing RMSE for the SVR Model**: 8.21
 - **Training RMSE for the Gradient Boosting Model**: 6.39
 - **Testing RMSE for the Gradient Boosting Model**: 8.63
 
 ### Discussion:
+
 - **Support Vector Regressor (SVR) Performance**:
   - The SVR model achieved a training RMSE of 7.14, which is relatively low, indicating a good fit on the training data.
   - The testing RMSE was 8.21, slightly higher than the training RMSE. This increase suggests that the model performs reasonably well on unseen data, although there might be a slight overfitting as the model performs better on the training data.
@@ -34,7 +41,7 @@ The model performance was evaluated using the Root Mean Square Error (RMSE), whi
   - The Gradient Boosting model showed a training RMSE of 6.39, which is quite low, indicating the model fits the training data well.
   - The testing RMSE increased to 8.63, which is slightly higher than the SVR's testing RMSE. This suggests that the Gradient Boosting model might not generalize as effectively as the SVR model, although the difference is fairly minimal.
 
-### Conclusion:
+## Conclusion:
 
 - **Generalization Gap**: Both models show a gap between training and testing RMSE, with the Gradient Boosting model having a slightly wider gap. This suggests a potential overfitting issue, where the model learns the training data well but does not generalize as effectively to new data.
   
